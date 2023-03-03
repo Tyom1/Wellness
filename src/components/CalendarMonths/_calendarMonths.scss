@@ -1,0 +1,50 @@
+.calendar {
+  border: 1px solid #ccc;
+  padding: 20px 40px;
+  width: 100%;
+  border-radius: 15px;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    color: rgb(69, 133, 175);
+    text-align: center;
+  }
+
+  &__mark {
+    margin: 0 0 5px;
+    padding:3px 30px;
+    border-radius: 15px;
+
+    &--green {
+      background-color: #61b057;
+    }
+
+    &--blue {
+      background-color: #13599e;
+    }
+
+    &--lightBlue {
+      background-color: #a3c8ed;
+    }
+
+    &:first-child {
+      margin-top: 10px;
+    }
+  }
+}
+.mark-enter-active,
+.mark-leave-active {
+  transition: all 0.5s ease;
+}
+.mark-enter-from,
+.mark-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+}

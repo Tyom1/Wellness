@@ -1,0 +1,40 @@
+.home {
+  width: 100%;
+  padding: 25px;
+  &__container {
+    width: 100%;
+    padding: 20px 25px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+  }
+
+  &__wrapper {
+    width: 100%;
+    display: flex;
+    @media (max-width: 967px) {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+  
+  &__wrapperTable {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+.hideWrapper-enter-active,
+.hideWrapper-leave-active {
+  transform-origin: top;
+  transition: transform 0.3s ease-in-out;
+}
+
+.hideWrapper-enter-to,
+.hideWrapper-leave-from {
+  transform: scaleY(1);
+}
+
+.hideWrapper-enter-from,
+.hideWrapper-leave-to {
+  transform: scaleY(0);
+}
