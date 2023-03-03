@@ -1,0 +1,28 @@
+.containerHead {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 20px;
+
+  &__info {
+    color: #000;
+    font-weight: 500;
+    font-size: 22px;
+
+    &--steps {
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+  
+  &__hideBtn {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    border: none;
+    border-bottom: 1px solid #000;
+    background: transparent;
+    cursor: pointer;
+  }
+}

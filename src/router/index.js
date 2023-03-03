@@ -1,5 +1,5 @@
 import { createRouter, createMemoryHistory } from 'vue-router'
-import HomeWellness from '@/views/HomeWellness'
+import HomeWellness from '@/views/HomeWellness/HomeWellness'
 
 const routes = [
   {
